@@ -426,6 +426,10 @@
     }
   }
   [_pageControl setHidden:NO];
+
+    if([_delegate respondsToSelector:@selector(imagePager:customizePageControl:)]) {
+        [_delegate imagePager:self customizePageControl:_pageControl];
+    }
 }
 
 - (void) setPageControlCenter:(CGPoint)pageControlCenter
