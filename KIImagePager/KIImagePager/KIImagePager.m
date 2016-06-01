@@ -303,7 +303,7 @@
 #pragma mark - PageControl Initialization
 - (void) initializePageControl
 {
-    CGRect pageControlFrame = CGRectMake(0, 0, _scrollView.frame.size.width, kPageControlHeight);
+    CGRect pageControlFrame = CGRectMake(_scrollView.frame.size.width / 2, _scrollView.frame.size.height, _scrollView.frame.size.width, kPageControlHeight);
     _pageControl = [[UIPageControl alloc] initWithFrame:pageControlFrame];
     _pageControl.center = CGPointMake(_scrollView.frame.size.width / 2, _scrollView.frame.size.height - 12.0);
     _pageControl.userInteractionEnabled = NO;
