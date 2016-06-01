@@ -73,4 +73,9 @@
     NSLog(@"%s %lu", __PRETTY_FUNCTION__, (unsigned long)index);
 }
 
+- (void)imagePager:(KIImagePager *)imagePager customizePageControl:(UIPageControl *)pageControl
+{
+    NSLog(@"%s", __PRETTY_FUNCTION__);
+}
+
 @end
